@@ -1,2 +1,42 @@
 {% extends "base.html"%} 
-{% block title%} Changed {% endblock %}
+{% block title%} HOME {% endblock %}
+
+{% block body%} 
+<div class="container">
+    <div class="rectangle-up">
+        <div class="rectangle-2">
+            <div class="rectangle-1" style="left: 0%;">
+                <div class="button-container">
+                    <h2 style="margin: 15px;">CHEST X-RAY</h2>
+                    <button class="button-1">Predicción un imagen</button>
+                </div>
+            </div>
+            <div class="rectangle-1" style="right: 0%;">
+                <div class="button-container">
+                    <h2 style="margin: 15px;">MELANOMA</h2>
+                    <button class="button-1">Predicción un imagen</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="rectangle-3">
+            <div class="image-style" style="background-image: url('static/imagenes/x-ray-imagen.jpg');"></div>
+            <div>
+                <h2 style="margin-left: 70px;">CHEST X-RAY</h2>
+                <div class="write-style">Show how your product's features matter, how they set you apart from the competition, and how you can transform your customer's experience at work or at home.</h3></div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="rectangle-3" style="justify-content: flex-end;">
+            <div>
+                <h2>MELANOMA</h2>
+                <div class="write-style" style="margin-right: 70px; margin-left: 0px;">Show how your product's features matter, how they set you apart from the competition, and how you can transform your customer's experience at work or at home.</h3></div>
+            </div>
+                <div class="image-style" style="background-image: url('static/imagenes/melanoma-imagen.png');"></div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
