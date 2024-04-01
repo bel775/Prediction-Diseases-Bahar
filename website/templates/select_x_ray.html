@@ -1,0 +1,34 @@
+{% extends "base.html"%} 
+{% block title%} Select imagen {% endblock %}
+
+{% block body%} 
+    <div class="container">
+        <div class="rectangle-up" style="height: 100%; padding: unset;">
+            <div class="button-container" style="top: 8%; left: 5%;">
+                <button class="button-1" style="width: 100px; background-color: white;" onclick="window.location.href = '/';">Home</button>
+            </div>
+            <div class="rectangle-1" style="left: auto; top: 10%; font-size: 20px; width: 320px; height: 100px;">
+                <h2 style="line-height: 1.65;">CHEST X-RAY</h2>
+            </div>
+            <form method="post" enctype="multipart/form-data" onsubmit="return validarTipoImagen()">                 
+                <button class="button-1" style="background-color: white;" type="submit">mostrar el resultado</button>                 
+                <input class="write-style" style="width: auto; height: auto; font-size: 20px;" type="file" name="image" id="imageInput" accept="image/*">             
+            </form>            
+        </div>
+    </div>
+    <script>
+        function validarTipoImagen() {
+            var input = document.getElementById('imageInput');
+            var file = input.files[0];
+            if (!file) {
+                alert('Por favor, seleccione un archivo.');
+                return false;
+            }
+            if (file.type !== 'image/png') {
+                alert('Por favor, seleccione un archivo PNG.');
+                return false;
+            }
+            return true;
+        }
+    </script>
+{% endblock %}

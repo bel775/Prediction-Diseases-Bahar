@@ -78,6 +78,7 @@
     font-weight: 600;
     font-size: 18px;
     text-align: center;
+    cursor: pointer;
 }
 
 .section-container {
@@ -107,3 +108,4 @@
     background-position: center;
     border-radius: 18px;
 }
+

@@ -1,0 +1,19 @@
+{% extends "base.html"%} 
+{% block title%} Result imagen {% endblock %}
+
+{% block body%} 
+    <div class="container">
+        <div class="rectangle-up" style="height: 100%; padding: unset;">
+            <div class="button-container" style="top: 8%; left: 5%;">
+                <button class="button-1" style="width: 100px; background-color: white;" onclick="window.location.href = '/';">Home</button>
+            </div>
+            <div class="rectangle-1" style="left: auto; top: 10%; font-size: 20px; width: 320px; height: 100px;">
+                <h2 style="line-height: 1.65;">CHEST X-RAY</h2>
+            </div>
+            
+            <div class="rectangle-1" style="left: auto; top: 25%; font-size: 16px; width: auto; height: 80px;">
+                <h2 style="line-height: 1.65; margin-left: 25px; margin-right: 25px;">La enfermidad es:   {{ dato }}</h2>
+            </div>
+        </div>
+    </div>
+{% endblock %}
