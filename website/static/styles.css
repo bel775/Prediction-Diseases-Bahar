@@ -36,7 +36,7 @@
 }
 
 .rectangle-2 {
-    width: 900px;
+    width: 1400px;
     height: 180px;
     position: absolute;
     top: 50%;
@@ -89,8 +89,8 @@
 }
 
 .write-style {
-	width: 375px;
-	height: 105px;
+	width: 450px;
+	height: 120px;
 	opacity: 80%;
 	color: #606060;
 	font-family: "Source Sans 3";
@@ -99,6 +99,21 @@
 	line-height: 1.42;
 	text-align: left;
     margin-left: 70px;
+    text-indent: 30px;
+}
+
+.write-style2 {
+	width: 450px;
+	height: 120px;
+	opacity: 80%;
+	color: #000000;
+	font-family: "Source Sans 3";
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 1.00;
+	text-align: left;
+    margin-left: 70px;
+    text-indent: 30px;
 }
 
 .image-style {
@@ -109,3 +124,32 @@
     border-radius: 18px;
 }
 
+
+
+.contenedor {
+    width: 300px; /* Ancho del contenedor */
+    margin-left: auto; /* Esto alineará el contenedor a la izquierda */
+    margin-right: auto; /* Esto centrará el contenedor horizontalmente */
+}
+
+.resultado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px
+}
+
+.titulo {
+    font-weight: bold;
+    width: 100px; /* Ajusta el ancho según sea necesario */
+}
+
+.valor {
+    flex-grow: 1;
+    text-align: right;
+}
+
+.separador {
+    border-top: 1px solid #000;
+    margin: 10px 0;
+}

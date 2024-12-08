@@ -1,0 +1,1 @@
+{"roc_auc": 0.9576713246701251, "loss": 0.38499733805656433, "accuracy": 0.8529411554336548, "img_size": "64", "balance_type": "OverSampler", "model_type": "EfficientNet", "activation": "gelu", "training_type": "Normal Train", "batch_size": "62", "epochs": "32", "optimization": "adam"}

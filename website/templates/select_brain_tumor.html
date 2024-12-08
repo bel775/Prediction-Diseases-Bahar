@@ -1,0 +1,94 @@
+{% extends "base.html"%} 
+{% block title%} Select image {% endblock %}
+
+{% block body%} 
+    <div class="container">
+        <div class="rectangle-up" style="height: 100%; padding: unset;">
+            <div class="button-container" style="top: 8%; left: 5%;">
+                <button class="button-1" style="width: 100px; background-color: white;" onclick="window.location.href = '/';">Home</button>
+            </div>
+            <div class="rectangle-1" style="left: auto; top: 10%; font-size: 20px; width: 320px; height: 100px;">
+                <h2 style="line-height: 1.65;">Brain Tumor MRI</h2>
+            </div>
+            <div class="rectangle-1" style="right: 3%; font-size: 16px; width: 350px; height: auto;">
+                <div class="contenedor">
+                    <div class="resultado" style="display: block; font-weight: bold;">Info. General of the CNN Model</div>
+                    <div class="separador"></div>
+                    <div class="resultado">
+                        <div class="titulo">Auc:</div>
+                        <div class="valor">{{ '%.2f' | format(general_data.roc_auc * 100) }}%</div>
+                    </div>
+                    <div class="separador"></div>
+                    <div class="resultado">
+                        <div class="titulo">Accuracy:</div>
+                        <div class="valor">{{ '%.2f' | format(general_data.accuracy * 100) }}%</div>
+                    </div>
+                    <div class="separador"></div>
+                    <div class="resultado">
+                        <div class="titulo">Loss:</div>
+                        <div class="valor">{{ '%.2f' | format(general_data.loss)}}</div>
+                    </div>
+                    <div class="separador"></div>
+                    <div class="resultado">
+                        <div class="titulo">Image Size:</div>
+                        <div class="valor">{{ general_data.img_size }}x{{general_data.img_size}}</div>
+                    </div>
+                    <div class="separador"></div>
+                    <div class="resultado">
+                        <div class="titulo">Model Type:</div>
+                        <div class="valor">{{ general_data.model_type }}</div>
+                    </div>
+                    <div class="separador"></div>
+                    <div class="resultado">
+                        <div class="titulo">Balance Technique:</div>
+                        <div class="valor">{{ general_data.balance_type }}</div>
+                    </div>
+                    <div class="separador"></div>
+                    <div class="resultado">
+                        <div class="titulo">Activation:</div>
+                        <div class="valor">{{ general_data.activation }}</div>
+                    </div>
+                    <div class="separador"></div>
+                    <div class="resultado">
+                        <div class="titulo">Optimization:</div>
+                        <div class="valor">{{ general_data.optimization }}</div>
+                    </div>
+                    <div class="separador"></div>
+                    <div class="resultado">
+                        <div class="titulo">Training Type:</div>
+                        <div class="valor">{{ general_data.training_type }}</div>
+                    </div>
+                    <div class="separador"></div>
+                    <div class="resultado">
+                        <div class="titulo">Batch size:</div>
+                        <div class="valor">{{ general_data.batch_size }}</div>
+                    </div>
+                    <div class="separador"></div>
+                    <div class="resultado">
+                        <div class="titulo">Epochs Number:</div>
+                        <div class="valor">{{ general_data.epochs }}</div>
+                    </div>
+                </div>
+            </div>
+            <form method="post" enctype="multipart/form-data" onsubmit="return validarTipoImagen()">                 
+                <button class="button-1" style="background-color: white;" type="submit">Show Result</button>                 
+                <input class="write-style" style="width: auto; height: auto; font-size: 20px;" type="file" name="image" id="imageInput" accept="image/*">             
+            </form>            
+        </div>
+    </div>
+    <script>
+        function validarTipoImagen() {
+            var input = document.getElementById('imageInput');
+            var file = input.files[0];
+            if (!file) {
+                alert('Please select a file.');
+                return false;
+            }
+            if (file.type !== 'image/jpeg') {
+                alert('Please select a JPG file.');
+                return false;
+            }
+            return true;
+        }
+    </script>
+{% endblock %}

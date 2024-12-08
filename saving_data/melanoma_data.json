@@ -1,0 +1,1 @@
+{"roc_auc": 0.7232633765419644, "loss": 1.0249983072280884, "accuracy": 0.49640992283821106, "img_size": "64", "balance_type": "UnderSampler", "model_type": "Hybrid", "activation": "relu", "training_type": "Normal Train", "batch_size": "62", "epochs": "1", "optimization": "adam"}

@@ -8,33 +8,50 @@
             <div class="rectangle-1" style="left: 0%;">
                 <div class="button-container">
                     <h2 style="margin: 15px;">CHEST X-RAY</h2>
-                    <button class="button-1" onclick="window.location.href = '/selectxray';">Predicción un imagen</button>
+                    <button class="button-1" onclick="window.location.href = '/selectxray';">Prediction</button>
+                </div>
+            </div>
+            <div class="rectangle-1" style="left: 50%; transform: translateX(-50%);">
+                <div class="button-container">
+                    <h2 style="margin: 15px;">Brain Tumor MRI</h2>
+                    <button class="button-1" onclick="window.location.href = '/selectbrain_tumor';">Prediction</button>
                 </div>
             </div>
             <div class="rectangle-1" style="right: 0%;">
                 <div class="button-container">
-                    <h2 style="margin: 15px;">MELANOMA</h2>
-                    <button class="button-1" onclick="window.location.href = '/selectmelanoma';">Predicción un imagen</button>
+                    <h2 style="margin: 15px;">ISIC MELANOMA</h2>
+                    <button class="button-1" onclick="window.location.href = '/selectmelanoma';">Prediction</button>
                 </div>
             </div>
         </div>
     </div>
     <div>
         <div class="rectangle-3">
-            <div class="image-style" style="background-image: url('static/imagenes/x-ray-imagen.jpg');"></div>
+            <div class="image-style" style="background-image: url('static/images/x-ray-image.jpg');"></div>
             <div>
                 <h2 style="margin-left: 70px;">CHEST X-RAY</h2>
-                <div class="write-style">Show how your product's features matter, how they set you apart from the competition, and how you can transform your customer's experience at work or at home.</h3></div>
+                <div class="write-style" style="height: 160px;">The site is used to analyze X-ray images. It is trained with labeled data to recognize patterns associated with normal, bacterial, or viral conditions. Based on the image, the system classifies it as "Normal", "Bacterial" or "Viral." The results are displayed through a user-friendly web interface that is easy to access and understand.</h3></div>
             </div>
         </div>
     </div>
+
     <div>
-        <div class="rectangle-3" style="justify-content: flex-end;">
+        <div class="rectangle-3">
+            <div class="image-style" style="background-image: url('static/images/brain_tumor.png');"></div>
             <div>
-                <h2>MELANOMA</h2>
-                <div class="write-style" style="margin-right: 70px; margin-left: 0px;">Show how your product's features matter, how they set you apart from the competition, and how you can transform your customer's experience at work or at home.</h3></div>
+                <h2 style="margin-left: 70px;">Brain Tumor MRI</h2>
+                <div class="write-style" style="height: 160px;">The site is designed to analyze brain tumor MRI images. It is trained with labeled datasets containing MRI scans categorized as "Glioma", "Meningioma", "No Tumor" or "Pituitary." The system uses deep learning algorithms to identify patterns and features characteristic of each category.</h3></div>
             </div>
-                <div class="image-style" style="background-image: url('static/imagenes/melanoma-imagen.png');"></div>
+        </div>
+    </div>
+
+    <div>
+        <div class="rectangle-3">
+            <div class="image-style" style="background-image: url('static/images/melanoma-image.png');"></div>
+            <div>
+                <h2 style="margin-left: 70px;">ISIC MELANOMA</h2>
+                <div class="write-style" style="height: 160px;">The site is also used to analyze images of melanoma. Based on the image, the system classifies it as "Melanoma", "Keratosis" or "Nevus".</h3></div>
+            </div>
         </div>
     </div>
 </div>
