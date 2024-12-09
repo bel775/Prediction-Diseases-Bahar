@@ -1,5 +1,4 @@
-Python==3.8.10
-Flas==3.0.2
+Flask==3.0.2
 Werkzeug==3.0.1
 cryptography==42.0.5
 numpy==1.24.3
