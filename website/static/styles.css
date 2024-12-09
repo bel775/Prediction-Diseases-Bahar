@@ -37,9 +37,9 @@
 
 .rectangle-2 {
     width: 1400px;
-    height: 180px;
+    height: 320px;
     position: absolute;
-    top: 50%;
+    top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
 }

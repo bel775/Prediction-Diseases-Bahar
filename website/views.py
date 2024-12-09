@@ -11,7 +11,7 @@ from tensorflow.keras.models import load_model
 from .get_data import get_new_data
 
 
-API_KEY = os.environ.get('API_KEY')
+API_KEY = "6609c948-c626-4ab4-8e09-f98420bdf2fd"
 
 
 public_key = cargar_clave_publica("public_key.pem")
@@ -38,6 +38,9 @@ def home():
     return render_template("home.html")
 
 
+@views.route("/test_siteWeb",methods=["GET"])
+def test_siteWeb():
+    return "Working"
 
 
 @views.route("/get_new_model",methods=["POST"])
