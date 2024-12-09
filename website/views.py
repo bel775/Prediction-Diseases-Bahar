@@ -1,12 +1,12 @@
 from flask import Blueprint, render_template, request, redirect, url_for, session,jsonify
-from tensorflow.keras.preprocessing import image
+from keras.preprocessing import image
 import numpy as np
 import io
 import os
 import json
 from .seguridad import cargar_clave_privada, cargar_clave_publica
 
-from tensorflow.keras.models import load_model
+from keras.models import load_model
 
 from .get_data import get_new_data
 
