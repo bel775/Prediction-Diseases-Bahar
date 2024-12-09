@@ -2,7 +2,9 @@ pip>=21.0
 setuptools>=58
 wheel>=0.38
 flask==3.1.0
-keras==2.18.0
+keras==3.7.0
 cryptography==44.0.0
 pillow==11.0.0
 gunicorn==23.0.0
+tflite-runtime==2.14.0
+tensorflow_cpu==2.18.0
