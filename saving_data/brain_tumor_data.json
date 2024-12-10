@@ -1,1 +1,1 @@
-{"roc_auc": 0.9466633363754904, "loss": 0.6031038165092468, "accuracy": 0.7678347826004028, "img_size": "64", "balance_type": "OverSampler", "model_type": "Functional API", "activation": "gelu", "training_type": "Normal Train", "batch_size": "62", "epochs": "3", "optimization": "adam"}
+{"roc_auc": 0.9982472316294679, "loss": 0.08973107486963272, "accuracy": 0.974342942237854, "img_size": "64", "balance_type": "OverSampler", "model_type": "EfficientNet", "activation": "gelu", "training_type": "Normal Train", "batch_size": "62", "epochs": "32", "optimization": "adam"}
